@@ -11,6 +11,30 @@
 			"installMaven": "false",
 			"installGradle": "false"
 		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"Codium.codium",
+				"naumovs.color-highlight",
+				"SeyyedKhandon.firacode",
+				"mhutchie.git-graph",
+				"donjayamanne.githistory",
+				"github.vscode-github-actions",
+				"codezombiech.gitignore",
+				"eamodio.gitlens",
+				"kisstkondoros.vscode-gutter-preview",
+				"oderwat.indent-rainbow",
+				"yzhang.markdown-all-in-one",
+				"ms-vsliveshare.vsliveshare",
+				"DavidAnson.vscode-markdownlint",
+				"christian-kohler.path-intellisense",
+				"pnp.polacode",
+				"chrmarti.regex",
+				"LouisWT.regexp-preview",
+				"Gruntfuggly.todo-tree"
+			]
+		}
 	}
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
