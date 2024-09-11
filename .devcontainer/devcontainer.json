@@ -32,7 +32,8 @@
 				"pnp.polacode",
 				"chrmarti.regex",
 				"LouisWT.regexp-preview",
-				"Gruntfuggly.todo-tree"
+				"Gruntfuggly.todo-tree",
+				"joshbolduc.commitlint"
 			]
 		}
 	}
