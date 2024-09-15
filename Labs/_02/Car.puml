@@ -1,0 +1,29 @@
+@startuml Car
+
+' + -> public
+' - -> private
+' # -> protected
+' ~ -> package
+' underlined -> static (represented by {static} as prefix )
+
+' Define classes
+class Car {
+    - _brand: string
+    - _kilometrage: float
+    - _max_speed: float
+    - _speed: float
+    - _tires: ArrayList<Tire>
+    - _is_moving: bool
+    - _is_breaking: bool
+
+    + Car(brand: string, max_speed: float, tires: Tire[])
+    + kilometrage(): float
+    + brand(): string
+    + empty_tires(): ArrayList<Tire>
+    + set_kilometrage(kilometrage: float): void
+    + set_speed(speed: float): void
+    + set_breaking(breaking: bool): void
+}
+
+
+@enduml

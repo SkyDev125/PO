@@ -1,0 +1,17 @@
+@startuml Name
+
+' + -> public
+' - -> private
+' # -> protected
+' ~ -> package
+' underlined -> static (represented by {static} as prefix )
+
+' Define classes
+class Name {
+    - _variable: Type
+    + constructor(varible: type)
+    + method(variable: type): type
+}
+
+
+@enduml
