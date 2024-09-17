@@ -11,6 +11,7 @@ public class Pen {
         _colour = colour;
         _brand = brand;
         _capacity = max_capacity;
+        System.out.println();
     }
 
     public void write(String str) {

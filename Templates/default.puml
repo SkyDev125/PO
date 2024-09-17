@@ -5,6 +5,11 @@
 ' # -> protected
 ' ~ -> package
 ' underlined -> static (represented by {static} as prefix )
+' final -> represented by a {final} as prefix
+' composição -> losangulo cheio
+' agregação -> losangulo vazio
+' associação -> linha
+' dependência -> linha traçada
 
 ' Define classes
 class Name {

@@ -25,5 +25,21 @@ class Car {
     + set_breaking(breaking: bool): void
 }
 
+' Define classes
+class Tire {
+    - _psi: float
+    - _rec_psi: float
+    - _punctured: bool
+    + Tire(psi: float, rec_psi: float)
+    + get_psi(): float
+    + get_rec_psi(): float
+    + is_empty(): bool
+    + set_psi(psi: float): void
+    + is_punctured(): bool
+}
+
+' Create composition relationship
+Car "1" *--> "4..*" Tire : _tires
+
 
 @enduml
