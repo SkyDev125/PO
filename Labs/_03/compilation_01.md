@@ -11,7 +11,7 @@ public class Sum {
     total = t;  // Compilation Error total doesnt exist, should be _total.
   }
 
- public void computeVectorSum(int[] v) {
+ public void computeVectorSum(int[] v) { //should be int
     int i;
     _total = 0;
 
@@ -40,7 +40,7 @@ public class Main {
     }
 
     Sum._s = sum;
-    Sum.computeVectorSum(v);
+    Sum.computeVectorSum(v); //should be sum.computeVectorSum(v);
     System.out.println(sum.getTotal()); // getTotal is private wont work.
   }
 }
