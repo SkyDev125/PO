@@ -5,10 +5,10 @@
 ' # -> protected
 ' ~ -> package
 ' underlined -> static (represented by {static} as prefix )
-' final -> represented by a {final} as prefix
+' final -> represented by a {final} as prefixº
+' associação -> linha (comp ou agreg)
 ' composição -> losangulo cheio
 ' agregação -> losangulo vazio
-' associação -> linha
 ' dependência -> linha traçada
 
 ' Define classes
@@ -17,6 +17,8 @@ class Name {
     + constructor(varible: type)
     + method(variable: type): type
 }
+
+
 
 
 @enduml
