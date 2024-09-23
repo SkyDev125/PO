@@ -1,0 +1,35 @@
+@startuml Operator
+
+class Operator{
+    - _totalMins: int
+    - _sentMessagesNum: int
+
+    + totalMins(): int
+    + totalMessagesNum(): int
+    + addCall(mins: int):
+    + addMessage(): int
+
+}
+
+class Telephone{
+    - _brand: String
+    - _operator: Operator    
+
+    + ring(): String
+    + call(mins: int): void
+    + sendMessage(): void
+    + brand(): String
+
+}
+
+class PrePaid extends Telephone{
+    - _balance: int
+
+    + balance(): int
+    + addBalance(balance:int): void
+}
+
+Operator "1" o-- Telephone
+
+
+@enduml
