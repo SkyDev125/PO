@@ -1,0 +1,7 @@
+Uma empresa tem funcionários. Um funcionário tem um nome e um salário. O nome do funcionário é um identificador único. Dois funcionários são iguais se tiverem o mesmo identificador (ou seja, o mesmo nome). Uma empresa deve ter as seguintes funcionalidades:
+
+    adicionar um funcionário à empresa mas não pode haver dois funcionários com o mesmo identificador. Caso o novo funcionário seja igual a um já existente, então não deve ser adicionado. O método deve indicar se houve sucesso a adicionar o funcionário;
+    Escreve no terminal o nome e o salário de cada empregado;
+    obter os funcionários que tenham um salário superior a um dado valor. Caso não exista nenhum funcionário nas condições indicadas então deve ser devolvida uma lista vazia;
+    remover os funcionários cujo nome começa com uma dada cadeia de caracteres (utilizar o método startsWith da classe String);
+    devolver uma colecção de funcionários ordenados por salário e nome.
