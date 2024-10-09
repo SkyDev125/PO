@@ -7,55 +7,55 @@ import java.util.ArrayList;
  */
 
 public class Car {
-    private String _brand;
-    private float _kilometrage = 0;
-    private float _max_speed;
-    private float _speed;
-    private Tire[] _tires;
-    private boolean _is_breaking = true;
+  private String _brand;
+  private float _kilometrage = 0;
+  private float _max_speed;
+  private float _speed;
+  private Tire[] _tires;
+  private boolean _is_breaking = true;
 
-    public Car(String brand, float max_speed, ArrayList<Tire> tires) {
-        _brand = brand;
-        _max_speed = max_speed;
-        _tires = new Tire[4];
+  public Car(String brand, float max_speed, ArrayList<Tire> tires) {
+    _brand = brand;
+    _max_speed = max_speed;
+    _tires = new Tire[4];
+  }
+
+  public float kilometrage() {
+    return _kilometrage;
+  }
+
+  public String brand() {
+    return _brand;
+  }
+
+  public ArrayList<Tire> empty_tires() {
+    ArrayList<Tire> empty_tires = new ArrayList<>();
+    for (Tire tire : _tires) {
+      if (tire.is_empty())
+        empty_tires.add(tire);
     }
+    return empty_tires;
+  }
 
-    public float kilometrage() {
-        return _kilometrage;
+  public void set_kilometrage(float kilometrage) {
+    _kilometrage = kilometrage;
+  }
+
+  public void set_speed(float speed) {
+    if (_is_breaking || speed > _max_speed)
+      return;
+
+    _speed = speed;
+  }
+
+  public float speed() {
+    return _speed;
+  }
+
+  public void set_breaking(boolean breaking) {
+    if (breaking) {
+      _speed = 0;
     }
-
-    public String brand() {
-        return _brand;
-    }
-
-    public ArrayList<Tire> empty_tires() {
-        ArrayList<Tire> empty_tires = new ArrayList<>();
-        for (Tire tire : _tires) {
-            if (tire.is_empty())
-                empty_tires.add(tire);
-        }
-        return empty_tires;
-    }
-
-    public void set_kilometrage(float kilometrage) {
-        _kilometrage = kilometrage;
-    }
-
-    public void set_speed(float speed) {
-        if (_is_breaking || speed > _max_speed)
-            return;
-
-        _speed = speed;
-    }
-
-    public float speed() {
-        return _speed;
-    }
-
-    public void set_breaking(boolean breaking) {
-        if (breaking) {
-            _speed = 0;
-        }
-        _is_breaking = breaking;
-    }
+    _is_breaking = breaking;
+  }
 }
